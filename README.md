@@ -21,10 +21,12 @@ Criar uma página web utilizando HTML, CSS e JavaScript para apresentar agentes 
 
 ## Estrutura do Projeto
 
+```plaintext
 index.html
 style.css
 script.js
 /audio
+```
 
 ## Conceitos de Git e GitHub Utilizados
 
