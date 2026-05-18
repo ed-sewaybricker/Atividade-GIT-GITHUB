@@ -22,6 +22,16 @@ header h1 {
     font-size: 40px;
 }
 
+.role {
+    text-align: center;
+    padding: 30px;
+}
+
+.role-img {
+    width: 45px;
+    height: 45px 
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -30,13 +40,35 @@ header h1 {
     padding: 30px;
 }
 
+.container-role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container-role img {
+    width: 50px;
+    height: auto;
+}
+
+.container-role h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
 .card {
     background-color: #1f2a36;
     width: 300px;
+    height: 500px;
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
 }
 
 .card img {
@@ -53,16 +85,21 @@ header h1 {
 
 .card p {
     padding: 15px;
+
+    flex: 1;
+    overflow-y: auto;
 }
 
 .card button {
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 10px 20px;
     border: none;
     background-color: #ff4655;
     color: white;
     border-radius: 8px;
     cursor: pointer;
+
+    margin-top: auto;
 }
 
 .card button:hover {

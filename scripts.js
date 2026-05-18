@@ -20,6 +20,18 @@ buttons.forEach((button) => {
             audio = new Audio("audio/sage.mp3");
         }
 
+        else if (agent === "neon") {
+            audio = new Audio("audio/neon.mp3");
+        }
+
+        else if (agent === "sova") {
+            audio = new Audio("audio/sova.mp3");
+        }
+
+        else if (agent === "clove") {
+            audio = new Audio("audio/clove.mp3");
+        }
+
         if (audio) {
             audio.play();
         }
