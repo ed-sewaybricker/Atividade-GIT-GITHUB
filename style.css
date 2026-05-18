@@ -54,3 +54,21 @@ header h1 {
 .card p {
     padding: 15px;
 }
+
+.card button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4655;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #ff7380;
+}
+
+button {
+    font-family: 'Valorant', sans-serif;
+}
