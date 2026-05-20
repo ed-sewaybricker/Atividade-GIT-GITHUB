@@ -27,9 +27,16 @@ header h1 {
     padding: 30px;
 }
 
-.role-img {
-    width: 45px;
-    height: 45px 
+.container-role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.container-role img {
+    width: 50px;
 }
 
 .container {
@@ -40,33 +47,15 @@ header h1 {
     padding: 30px;
 }
 
-.container-role {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.container-role img {
-    width: 50px;
-    height: auto;
-}
-
-.container-role h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
 .card {
     background-color: #1f2a36;
     width: 300px;
-    height: 500px;
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.3s;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
 }
@@ -79,32 +68,158 @@ header h1 {
 }
 
 .card h2 {
-    margin-top: 15px;
+    margin: 15px 0;
     color: #ff4655;
 }
 
-.card p {
-    padding: 15px;
-    flex: 1;
-    overflow-y: auto;
-}
-
-.card button {
-    margin: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #ff4655;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: auto;
-}
-
-.card:has(button:hover) {
-    transform: scale(1.05) rotate(-1deg);
-    box-shadow: 0 0 25px rgba(255, 70, 85, 0.7);
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 70, 85, 0.6);
 }
 
 button {
     font-family: 'Valorant', sans-serif;
+}
+
+#modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+.modal-box {
+    width: 900px;
+    max-width: 95%;
+    height: 520px;
+    display: flex;
+    background-color: #0f1923;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 30px rgba(255,70,85,0.4);
+}
+
+.close-modern {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-modern:hover {
+    background: #ff4655;
+    transform: rotate(90deg);
+}
+
+.modal-left {
+    width: 40%;
+    background: linear-gradient(135deg, #ff4655, #111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-left img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.modal-right {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    overflow-y: auto;
+}
+
+.modal-right::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-right::-webkit-scrollbar-thumb {
+    background: #ff4655;
+    border-radius: 10px;
+}
+
+.modal-right::-webkit-scrollbar-track {
+    background: #0f1923;
+}
+
+.modal-right h1 {
+    color: #ff4655;
+}
+
+.modal-right p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.voice-button {
+    background-color: #ff4655;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.voice-button:hover {
+    transform: scale(1.05);
+}
+
+.habilidades {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.habilidade-btn {
+    flex: 1;
+    height: 60px;
+
+    background: transparent;
+    border: 1px solid rgba(255, 70, 85, 0.5);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.habilidade-btn img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.habilidade-btn:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 70, 85, 0.15);
+    border-color: #ff4655;
+}
+
+.habilidade-detalhe {
+    margin-top: 10px;
+    background: rgba(255,255,255,0.05);
+    padding: 12px;
+    border-radius: 10px;
 }
