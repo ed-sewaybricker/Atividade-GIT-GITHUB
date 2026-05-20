@@ -132,8 +132,10 @@ button {
 }
 
 .modal-left img {
-    width: 100%;
+    width: 130%;
+    height: 130%;
     object-fit: contain;
+    transform: scale(1.1);
 }
 
 .modal-right {
