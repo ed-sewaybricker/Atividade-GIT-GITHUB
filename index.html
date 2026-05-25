@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agentes Valorant</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
         <h1>Agentes do Valorant</h1>
     </header>
 
+    <!--CRIAÇÃO DE CADA POSIÇÃO: DUELISTAS -->
+
     <div class="container-role">
-        <img class="role-img" src="https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png" alt="Duelistas"> 
+        <img class="role-img"
+            src="https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png"
+            alt="Duelistas">
         <h1 class="role">Duelistas</h1>
     </div>
 
@@ -21,8 +27,11 @@
 
     </main>
 
+    <!--CRIAÇÃO DE CADA POSIÇÃO: INICIADORES -->
     <div class="container-role">
-        <img class="role-img" src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png" alt="Iniciadores"> 
+        <img class="role-img"
+            src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png"
+            alt="Iniciadores">
         <h1 class="role">Iniciadores</h1>
     </div>
 
@@ -30,8 +39,12 @@
 
     </main>
 
+    <!--CRIAÇÃO DE CADA POSIÇÃO: cONTROLADOR -->
+
     <div class="container-role">
-        <img class="role-img" src="https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png" alt="Controladores"> 
+        <img class="role-img"
+            src="https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png"
+            alt="Controladores">
         <h1 class="role">Controladores</h1>
     </div>
 
@@ -39,43 +52,48 @@
 
     </main>
 
+    <!--CRIAÇÃO DE CADA POSIÇÃO: SENTINELAS -->
+
     <div class="container-role">
-        <img class="role-img" src="https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png" alt="Sentinelas"> 
+        <img class="role-img"
+            src="https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png"
+            alt="Sentinelas">
         <h1 class="role">Sentinelas</h1>
     </div>
 
     <main class="container" id="sentinelas">
 
     </main>
-
+    <!-- CRIAÇÃO DOS MODAL DOS PERSONAGENS -->
     <div id="modal">
-    <div class="modal-box">
+        <div class="modal-box">
 
-        <button class="close-modern" onclick="fecharModal()">✕</button>
+            <button class="close-modern" onclick="fecharModal()">✕</button>
 
-        <div class="modal-left">
-            <img id="modal-img" src="" alt="">
-        </div>
+            <div class="modal-left">
+                <img id="modal-img" src="" alt="">
+            </div>
 
-        <div class="modal-right">
+            <div class="modal-right">
 
-            <h1 id="modal-name"></h1>
-            <p id="modal-desc"></p>
+                <h1 id="modal-name"></h1>
+                <p id="modal-desc"></p>
 
-            <button class="voice-button" id="voice-btn">Ouvir voz</button>
+                <button class="voice-button" id="voice-btn">Ouvir voz</button>
 
-            <div class="habilidades" id="habilidades-container"></div>
+                <div class="habilidades" id="habilidades-container"></div>
 
-            <div class="habilidade-detalhe">
-                <h3 id="habilidade-nome"></h3>
-                <p id="habilidade-texto"></p>
+                <div class="habilidade-detalhe">
+                    <h3 id="habilidade-nome"></h3>
+                    <p id="habilidade-texto"></p>
+                </div>
+
             </div>
 
         </div>
-
     </div>
-</div>
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
